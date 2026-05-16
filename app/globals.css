@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Palette extracted from thariqs.github.io/html-effectiveness */
+  --color-paper: #FAF9F5;         /* --ivory: page bg */
+  --color-surface: #FFFFFF;        /* --paper: card body */
+  --color-card-header: #E3DACC;    /* --oat: sandy header panel */
+  --color-card-footer: #F0EEE6;    /* g100: card footer strip */
+  --color-ink: #141413;            /* --slate */
+  --color-rule: #D1CFC5;           /* g300: borders */
+  --color-rule-hover: #87867F;
+  --color-muted: #3D3D3A;          /* g700 */
+  --color-faint: #87867F;          /* g500 */
+  --color-working-tool: #B85C3E;   /* --clay-d: terra cotta dark */
+  --color-working-generating: #D97757; /* --clay: terra cotta */
+  --color-waiting: #788C5D;        /* --olive */
+  --color-stopped: #B85C3E;        /* clay-d reused */
+  --color-inactive: #87867F;       /* g500 */
+  --color-link: #B85C3E;           /* clay-d */
+  --color-cyan: #0e7490;
+  --color-cyan-bg: #E6E3DA;        /* g200, neutral wash */
+}
+
+:root {
+  --selection-bg: rgb(217 119 6 / 0.2);
+}
+
+[data-theme="dark"] {
+  --color-paper: #0c0a09;
+  --color-surface: #1c1917;
+  --color-card-header: #1c1917;
+  --color-card-footer: #14110f;
+  --color-ink: #f5f5f4;
+  --color-rule: #292524;
+  --color-rule-hover: #44403c;
+  --color-muted: #a8a29e;
+  --color-faint: #57534e;
+  --color-working-tool: #fbbf24;
+  --color-working-generating: #60a5fa;
+  --color-waiting: #34d399;
+  --color-stopped: #f87171;
+  --color-inactive: #57534e;
+  --color-link: #818cf8;
+  --color-cyan: #22d3ee;
+  --color-cyan-bg: #082f49;
+  --selection-bg: rgb(251 191 36 / 0.25);
+}
+
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  transition:
+    background-color 200ms,
+    color 200ms;
+}
+
+::selection {
+  background: var(--selection-bg);
+}
+
+/* Markdown content scoped to .cc-md */
+.cc-md {
+  color: var(--color-ink);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.cc-md .cc-md-p {
+  margin: 0.4em 0;
+}
+.cc-md .cc-md-p:first-child { margin-top: 0; }
+.cc-md .cc-md-p:last-child  { margin-bottom: 0; }
+.cc-md .cc-md-h {
+  margin: 0.9em 0 0.35em;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.cc-md .cc-md-h1 { font-size: 1.15em; }
+.cc-md .cc-md-h2 { font-size: 1.08em; }
+.cc-md .cc-md-h3 { font-size: 1.02em; }
+.cc-md .cc-md-h4,
+.cc-md .cc-md-h5,
+.cc-md .cc-md-h6 {
+  font-size: 1em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cc-md .cc-md-list {
+  margin: 0.4em 0;
+  padding-left: 1.4em;
+}
+.cc-md .cc-md-ul { list-style: disc; }
+.cc-md .cc-md-ol { list-style: decimal; }
+.cc-md .cc-md-li { margin: 0.15em 0; }
+.cc-md .cc-md-li > ul,
+.cc-md .cc-md-li > ol { margin: 0.15em 0; }
+.cc-md .cc-md-quote {
+  margin: 0.6em 0;
+  padding: 0.2em 0.9em;
+  border-left: 3px solid var(--color-rule);
+  color: var(--color-muted);
+}
+.cc-md .cc-md-hr {
+  margin: 0.9em 0;
+  border: 0;
+  border-top: 1px solid var(--color-rule);
+}
+.cc-md .cc-md-table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6em 0;
+  font-size: 12.5px;
+}
+.cc-md .cc-md-th,
+.cc-md .cc-md-td {
+  border: 1px solid var(--color-rule);
+  padding: 0.25em 0.55em;
+  text-align: left;
+}
+.cc-md .cc-md-th {
+  background: var(--color-card-header);
+  font-weight: 600;
+}
+.cc-md strong { font-weight: 600; }
+.cc-md em { font-style: italic; }

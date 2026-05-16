@@ -1,0 +1,50 @@
+{
+  "name": "cc-cards",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A card-based local monitor for active Claude Code sessions across ~/.claude and ~/.ccs/instances/*.",
+  "license": "MIT",
+  "author": "hancci",
+  "homepage": "https://github.com/hancci/cc-cards#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hancci/cc-cards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hancci/cc-cards/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "monitoring",
+    "dashboard",
+    "next.js",
+    "sse",
+    "tmux",
+    "developer-tools"
+  ],
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 3030",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3030",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^1.14.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
