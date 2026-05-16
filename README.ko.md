@@ -15,13 +15,11 @@
 카드는 디스크의 JSONL이 변경될 때마다 Server-Sent Events로 실시간 갱신됩니다.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./docs/screenshots/cc-cards-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./docs/screenshots/cc-cards-light.png">
-    <img alt="cc-cards 데모 모드 화면" src="./docs/screenshots/cc-cards-light.png" width="900">
-  </picture>
+  <img alt="cc-cards 라이트 테마" src="./docs/screenshots/cc-cards-light.png" width="48%">
+  &nbsp;
+  <img alt="cc-cards 다크 테마" src="./docs/screenshots/cc-cards-dark.png" width="48%">
   <br>
-  <sub><em>스크린샷은 <code>?demo=1</code> 모드 화면이며 프로젝트/브랜치/프롬프트 텍스트는 모두 placeholder입니다.</em></sub>
+  <sub><em>왼쪽 라이트 · 오른쪽 다크 — <code>?demo=1</code> 모드 화면이며 프로젝트/브랜치/프롬프트 텍스트는 모두 placeholder입니다.</em></sub>
 </p>
 
 ## 빠른 시작

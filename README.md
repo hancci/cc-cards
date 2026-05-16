@@ -15,13 +15,11 @@ It tells you, at a glance:
 The cards update live via Server-Sent Events whenever any session JSONL on disk changes.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./docs/screenshots/cc-cards-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./docs/screenshots/cc-cards-light.png">
-    <img alt="cc-cards in demo mode" src="./docs/screenshots/cc-cards-light.png" width="900">
-  </picture>
+  <img alt="cc-cards light theme" src="./docs/screenshots/cc-cards-light.png" width="48%">
+  &nbsp;
+  <img alt="cc-cards dark theme" src="./docs/screenshots/cc-cards-dark.png" width="48%">
   <br>
-  <sub><em>Screenshots captured in <code>?demo=1</code> mode — all project / branch / prompt text is placeholder.</em></sub>
+  <sub><em>Light · Dark — captured in <code>?demo=1</code> mode, all project / branch / prompt text is placeholder.</em></sub>
 </p>
 
 ## Quick start
